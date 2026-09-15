@@ -1,0 +1,37 @@
+<h1>Lista de filmes:</h1>
+<ul>
+    @for(item of filmes; track $index) {
+        <li (click)="filmeSelecionado = item;
+        visualizacoes = 0;
+        ">{{ item }}</li>
+    }
+</ul>
+
+@if (filmeSelecionado) {
+    <p>Você escolheu: {{filmeSelecionado}}</p> 
+    <p>Visualizações: {{visualizacoes}}</p>
+    <button [class]="{'favoritado': filmeFavorito, 'naofavoritado': !filmeFavorito}" (click)="filmeFavorito = !filmeFavorito">
+            {{filmeFavorito ? 'Favoritado!' : 'Não favoritado!'}}
+    </button>  
+    <button class="botao-assistir" (click)="incrementar()">Assistir</button>  
+}
+
+
+<p>
+
+</p>
+
+
+    <input (keyup.enter)="adicionarFilme($event)" 
+        placeholder="Digite o nome de um filme e precione ENTER"/>
+    <p>"Se estiver vazio não de enter"</p>
+
+
+
+
+
+
+
+
+
+

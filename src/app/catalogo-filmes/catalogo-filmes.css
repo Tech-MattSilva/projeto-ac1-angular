@@ -1,0 +1,47 @@
+
+h1{
+    font-family: Arial;
+    font-size: 50px;
+}
+
+p{
+    font-size: 25px;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.favoritado {
+    padding: 10px;
+    color: white; 
+    background-color:darkgreen;
+    border: 1px solid green;
+    border-radius: 20px;
+
+}
+.naofavoritado {
+    padding: 10px;
+    color: white;
+    background-color:red;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+
+ul{
+    font-size: 20px;
+
+}
+
+.botao-assistir{
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+    background-color:black;
+    border: 1px solid black;
+    border-radius: 20px;    
+}
+
